@@ -1,0 +1,91 @@
+nav {
+    background-color: #2d333b;
+    color: #cdd9e5 !important;
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #23272e;
+    color: #cdd9e5 !important;
+}
+
+table {
+    color: #cdd9e5 !important;
+}
+
+thead {
+    font-size: 20px;
+}
+tr {
+    font-weight: 400;
+}
+
+.btn-outline-primary {
+    color: #6cb6ff !important;
+    background-color: #263141;
+}
+
+.btn-outline-primary:hover {
+    color: #ffff !important;
+    background-color: #6cb6ff;
+}
+
+.btn-outline-warning {
+    color: #daaa3f !important;
+    background-color: #31302a;
+}
+
+.btn-outline-warning:hover {
+    color: #ffff !important;
+    background-color: #daaa3f;
+}
+
+.btn-primary {
+    color: #6cb6ff !important;
+    background-color: #23272e;
+}
+
+.btn-primary:hover {
+    color: #ffff !important;
+    background-color: #6cb6ff;
+}
+
+.btn-danger {
+    color: #e5534b !important;
+    background-color: #23272e;
+}
+
+.btn-danger:hover {
+    color: #ffff !important;
+    background-color: #e5534b;
+}
+
+a.active.nav-link {
+    background-color: #2d333b !important;
+    border-color: #626e79 !important;
+    color: #ffff !important;
+}
+a.nav-link {
+    color: #cdd9e5;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #626e79;
+}
+
+.form-control:valid {
+    color: #cdd9e5;
+    background-color: #2d333b !important;
+    border-color: #626e79 !important;
+}
+.form-select:valid {
+    color: #cdd9e5;
+    background-color: #2d333b !important;
+    border-color: #626e79 !important;
+}
+
+.img-thumbnail {
+    border: black;
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: #2d333b;
+    color: #cdd9e5;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    margin: 1rem;
+}
+a {
+    color: #4099ff;
+}
+table {
+    border-collapse: collapse;
+}
+/* Apply a default padding if legacy cellpadding attribute is missing */
+table:not([cellpadding]) th,
+table:not([cellpadding]) td {
+    padding: 0.4rem;
+}
+/* Set default table styles if a table has a positive border attribute
+   and no inline css */
+table[border]:not([border="0"]):not([style*="border-width"]) th,
+table[border]:not([border="0"]):not([style*="border-width"]) td {
+    border-width: 1px;
+}
+/* Set default table styles if a table has a positive border attribute
+   and no inline css */
+table[border]:not([border="0"]):not([style*="border-style"]) th,
+table[border]:not([border="0"]):not([style*="border-style"]) td {
+    border-style: solid;
+}
+/* Set default table styles if a table has a positive border attribute
+   and no inline css */
+table[border]:not([border="0"]):not([style*="border-color"]) th,
+table[border]:not([border="0"]):not([style*="border-color"]) td {
+    border-color: #7b6d6d;
+}
+figure {
+    display: table;
+    margin: 1rem auto;
+}
+figure figcaption {
+    color: #978a8a;
+    display: block;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+hr {
+    border-color: #626e79;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+}
+code {
+    background-color: #626e79;
+    border-radius: 3px;
+    padding: 0.1rem 0.2rem;
+}
+.mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
+    color: #cdd9e5;
+}
