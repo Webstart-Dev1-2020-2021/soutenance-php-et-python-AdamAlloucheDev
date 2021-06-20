@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : Dim 20 juin 2021 à 17:20
+-- Généré le : Dim 20 juin 2021 à 17:53
 -- Version du serveur :  5.7.30
 -- Version de PHP : 7.4.9
 
@@ -60,9 +60,11 @@ CREATE TABLE `categories_posts` (
 --
 
 INSERT INTO `categories_posts` (`id`, `post_id`, `category_id`) VALUES
-(21, 44, 3),
-(37, 47, 1),
-(88, 40, 1);
+(88, 40, 1),
+(90, 47, 1),
+(91, 47, 2),
+(94, 44, 1),
+(95, 44, 2);
 
 -- --------------------------------------------------------
 
@@ -111,7 +113,7 @@ CREATE TABLE `posts` (
 
 INSERT INTO `posts` (`id`, `title`, `date`, `summary`, `content`, `is_published`, `created_at`, `img`, `user_id`) VALUES
 (40, 'Audi A6 e-tron Concept (2021), la Tesla Model S d\'Audi ?', '2021-05-13 16:15:33', 'Dévoilée au salon de Shanghai 2021 (il y a bien un salon automobile ouvert actuellement en Chine !), l\'A6 e-tron Concept préfigure l\'arrivée d\'une nouvelle berline électrique de luxe chez Audi à côté de la récente e-tron GT. Son format semble parfait pour la jeter aux basques de la Tesla Model S.', '<p>Audi poss&egrave;de d&eacute;j&agrave; une berline &eacute;lectrique dans sa gamme, la tr&egrave;s sportive e-tron GT qui poss&egrave;de les m&ecirc;mes &eacute;l&eacute;ments techniques de base que la Porsche Taycan. Mais la marque aux anneaux pr&eacute;pare l\'arriv&eacute;e d\'une seconde berline &agrave; z&eacute;ro &eacute;missions dans sa gamme. Pour battre la toute nouvelle Mercedes EQS, incarnant le tr&egrave;s grand luxe au-dessus de la Classe S ? Pas tout &agrave; fait. L\'A6 e-tron Concept annonce semble-t-il un mod&egrave;le au positionnement moins &eacute;litiste que celui de la tr&egrave;s grosse Mercedes, mais aussi moins sportif que celui de la s&oelig;ur GT e-tron. Inaugurant la toute nouvelle plateforme &eacute;lectrique PPE d\'Audi r&eacute;serv&eacute;e aux gros mod&egrave;les &eacute;lectriques, l\'A6 e-tron Concept affiche des proportions de berline fa&ccedil;on &laquo; fastback &raquo;. Sa silhouette para&icirc;t plus trapue que celle de l\'A7 Sportback, mais beaucoup moins athl&eacute;tique que celle de la GT e-tron. Notez la signature lumineuse LED &agrave; l\'arri&egrave;re qui court sur toute la largeur de l\'auto, int&eacute;grant les quatre anneaux d\'Audi pour la premi&egrave;re fois. 800 volts, aussi Comme la Taycan et la GT e-tron dot&eacute;es de la plateforme J1, la plateforme PPE d\'Audi fonctionnera sur une tension &agrave; 800 volts qui permettra de faciliter le fonctionnement des syst&egrave;mes de charge rapide. Cette plateforme servira &agrave; la version de s&eacute;rie de l\'A6 e-tron Concept, mais aussi &agrave; un prochain SUV 100% &eacute;lectrique (rempla&ccedil;ant de l\'e-tron ?) et &agrave; des mod&egrave;les futurs de Porsche.</p>', 1, '2021-05-13 16:15:33', 'main_1623764447.jpeg', 3),
-(44, 'Tesla Model S P100D ', '2021-06-02 13:01:08', 'incroyable', '<p>test test test test</p>', 1, '2021-06-02 13:01:08', '1622631668.jpeg', 3),
+(44, 'Tesla Model S P100D ', '2021-06-02 13:01:08', 'L\'accélération de la Model S de chez Tesla est l\'une des plus rapides du monde et pour cause : son moteur, électrique, suit une courbe d\'accélération différente de celle des moteurs à combustion.\r\n\r\n', '<h2><strong>La Tesla Model S tombe sous la barre des 2,4 secondes</strong></h2>\r\n<p>Jusqu\'&agrave; pr&eacute;sent, Tesla vantait les m&eacute;rites de sa Model S P100D, la plus puissante dans le commerce. Lorsqu\'est activ&eacute; le&nbsp;<em>Ludicrous Mode</em>, capable de pousser le moteur, la voiture passe de 0 &agrave; 60 miles par heure (mph) en seulement 2,4 secondes. Une v&eacute;ritable prouesse pour une voiture vendue moins de 150 000 dollars et, surtout, pour une voiture de s&eacute;rie et non une version sp&eacute;ciale sport.</p>\r\n<p>&nbsp;</p>\r\n<p>Mais la team Tesla Racing semble &ecirc;tre all&eacute;e plus loin, sans toucher la voiture.&nbsp;<strong>Gr&acirc;ce &agrave; un nouveau mode, le&nbsp;<em>Ludicrous Plus</em>, la Tesla Model S P100D a &eacute;t&eacute; capable d\'atteindre les 60 mph en moins de 2,4 secondes. 2,389 secondes pour &ecirc;tre exact</strong>, comme le montre la vid&eacute;o post&eacute;e sur la&nbsp;<span class=\"s1\" style=\"text-decoration-line: underline;\">cha&icirc;ne Youtube officielle de Tesla Racing</span>.</p>\r\n<p>&nbsp;</p>\r\n<h2><strong>Une version modifi&eacute;e de la Tesla S fait encore mieux</strong></h2>\r\n<p>Avec cette nouvelle prouesse, la Tesla Model S P100D devient donc capable de battre la Faraday Future FF91. La voiture de la start-up Faraday Future a &eacute;t&eacute; pr&eacute;sent&eacute;e au CES 2017 de Las Vegas d&eacute;but janvier 2017 et l\'entreprise n\'a pas manqu&eacute; de pr&eacute;ciser que sa voiture avait une acc&eacute;l&eacute;ration plus forte que celle de la Tesla S. Sauf que le r&eacute;sultat de la FF91 a &eacute;t&eacute; atteint avec une voiture modifi&eacute;e, all&eacute;g&eacute;e et plus a&eacute;rodynamique, alors que la Tesla Model S P100D utilis&eacute;e par Tesla Racing est une voiture de s&eacute;rie.</p>\r\n<p>&nbsp;</p>\r\n<p>Il y a toutefois des personnes qui ont modifi&eacute; une Tesla Model S pour en faire une voiture de course&nbsp;: les organisateurs du Electric GT Championship.&nbsp;<strong>Cette course pr&eacute;sente des Tesla Model S modifi&eacute;es qui peuvent atteindre les 60 mph en seulement 2,1 secondes.</strong></p>', 1, '2021-06-02 13:01:08', '1622631668.jpeg', 3),
 (47, 'Taycan Turbo S : une Porsche spectaculaire sans Flat Six !', '2021-06-07 14:28:58', 'C\'est un évènement. Un sacré nouvel événement chez Porsche ! Une révolution même, qui confirme que la volonté de s\'engager irréversiblement vers une nouvelle ère électrique ne changera ni l\'esprit, ni l\'ADN du constructeur aux 20000 victoires en compétition. La Taycan Turbo S est une vraie Porsche. Dans le ton et la performance. C\'est confirmé. Notre essai va pouvoir en témoigner.', '<p><span style=\"color: #ffffff;\">Les 6 Milliards d\'investissements consentis dans l\'&eacute;lectrification de ses produits sportifs &laquo; z&eacute;ro &eacute;mission &raquo; d\'ici &agrave; 2022, n&lsquo;auront pas &eacute;t&eacute; sans cons&eacute;quence. Une nouvelle page se tourne,&nbsp;<strong>Porsche oublie d&eacute;finitivement le Diesel, conserve ses armes thermiques et historiques et engage une partie de ses ressources &agrave; l\'&eacute;lectrification sportive</strong>. Le Luxembourg aura &eacute;t&eacute; notre terrain de jeu pour les premiers tours de ses 4 roues survolt&eacute;es par 761 ch.</span></p>\r\n<p><span style=\"color: #ffffff;\">Les ann&eacute;es passent mais les temps changent. Irr&eacute;m&eacute;diablement. En 2008, le Diesel a fait son apparition chez Porsche. Une aberration ? Pas vraiment. Cela a sans doute sauv&eacute; la marque d\'un probable d&eacute;p&ocirc;t de bilan. Lorsque Porsche a &eacute;largi sa gamme &agrave; davantage de mod&egrave;les et notamment&nbsp;<strong>les SUV, les motorisations Diesel, mutualis&eacute;es avec Audi et Volkswagen notamment</strong>, lui ont permis de s\'en tirer avantageusement. En dix ans, Porsche a retrouv&eacute; des couleurs financi&egrave;res lui permettant aujourd\'hui de s\'orienter vers plus de noblesse m&eacute;canique et des tendances plus modernes qui se conjuguent d&eacute;sormais au courant &eacute;lectrique.</span></p>', 1, '2021-06-07 14:28:58', '1623068938.jpeg', 3);
 
 -- --------------------------------------------------------
@@ -133,9 +135,9 @@ CREATE TABLE `post_comments` (
 --
 
 INSERT INTO `post_comments` (`id`, `post_id`, `user_id`, `content`, `created_at`) VALUES
-(3, 40, 3, 'hnbdfd', '2021-06-16 11:47:06'),
-(4, 40, 3, 'nfhgbdvx', '2021-06-16 11:47:12'),
-(5, 40, 3, 'jyhrdgfs', '2021-06-16 11:47:16');
+(3, 40, 3, 'Magnifique !', '2021-06-16 11:47:06'),
+(4, 40, 4, 'Je trouve le design vraiment innovant.', '2021-06-16 11:47:12'),
+(5, 40, 8, 'Pas à mon gout, mais il faut reconnaitre le travail accompli sur les électriques depuis quelques années…', '2021-06-16 11:47:16');
 
 -- --------------------------------------------------------
 
@@ -257,7 +259,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT pour la table `categories_posts`
 --
 ALTER TABLE `categories_posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT pour la table `categories_users`
