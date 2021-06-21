@@ -25,7 +25,7 @@
                 <p class="card-category"><?= $post['categories']; ?></p>
               <?php endif; ?>
               <h5 class="card-title"><?= $post['title']; ?></h5>
-                <p class="card-info">Auteur : <?= $post['firstname']; ?> <?= $post['lastname']; ?> - <?= dateFR($post['date']); ?></p>
+                <p class="card-info">Par : <?= $post['firstname']; ?> <?= $post['lastname']; ?> - <?= dateFR($post['date']); ?></p>
                 <p class="card-text"><?= $post['summary']; ?></p>
   
                 <a href="index.php?page=post&id=<?=$post['id'];?>" class="card-link border-top border-bottom p-3">Lire l'article</a>

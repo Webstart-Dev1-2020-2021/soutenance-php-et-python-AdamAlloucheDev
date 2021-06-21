@@ -13,8 +13,9 @@
 
 const header = document.querySelector("header");
 const articles = document.querySelector(".articles");
+const galery = document.querySelector(".galery");
 
-const observer = new IntersectionObserver(
+const observer1 = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             console.log("Entry :", entry.isIntersecting);
@@ -30,4 +31,21 @@ const observer = new IntersectionObserver(
     { threshold: 0.5, rootMargin: "100px" }
 );
 
-observer.observe(articles);
+const observer2 = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            console.log("Entry :", entry.isIntersecting);
+            console.log("Entry :", entry.boundingClientRect);
+            if (entry.boundingClientRect.y < 0) {
+                header.classList.add("header-galery");
+            }
+            if (entry.isIntersecting) {
+                header.classList.remove("header-galery");
+            }
+        });
+    },
+    { threshold: 0.5, rootMargin: "100px" }
+);
+
+observer1.observe(articles);
+observer2.observe(galery);

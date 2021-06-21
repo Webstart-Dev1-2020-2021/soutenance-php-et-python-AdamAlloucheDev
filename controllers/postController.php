@@ -4,6 +4,7 @@
   require_once ('models/Post.php');
   require_once ('models/Comment.php');  
   require_once ('models/User.php'); 
+  require_once ('models/Images.php'); 
 
   $categories = getAllCategories();
   // $comments = getAllComments();
@@ -14,6 +15,7 @@
 
   if (isset($_GET['id'])) {
     $postId = $_GET['id'];
+    $images = getimagesByPostId($postId);
     $commentsByPostId = getCommentsByPostId($postId);
   }
   else {

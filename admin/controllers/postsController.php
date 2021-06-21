@@ -154,9 +154,11 @@
 
       $deleteImage = $_POST['delete_image'];
       $imageId = $_POST['img_id'];
+      $imageName = $_POST['img_name'];
 
       if(isset($deleteImage)){
         deleteImage($imageId);
+        unlink('../assets/images/posts/'.$imageName);
         $_SESSION['message'] = 'Image supprimée !';
         
       }
@@ -171,10 +173,6 @@
       $submittedIsPublished = $_POST['is_published'];
       
       
-      
-      
-      
-
       if (empty($submittedTitle)) {
         $errors[] = "Le titre est obligatoire.";
       }

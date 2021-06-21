@@ -1,6 +1,8 @@
 <h2 class="mx-auto" style="text-align: center;"><?= ($action == 'new') ? "Ajouter un article" : "Modification de l'article" ?></h2>
 
 
+<pre><?php var_dump($_POST); ?></pre>
+
 <?php if(!empty($errors)): ?>
 	<div class="alert alert-danger alert-dismissible fade show" role="alert">
 		<strong>Erreur !</strong><br>
@@ -109,6 +111,7 @@
 					<div class="">
 						<img class="img-thumbnail img-fluid w-50 m-3" src='../assets/images/posts/<?=$image['file_name'];?>' alt="">
 						<input type="hidden" name="img_id" value="<?= $image['id']; ?>">
+						<input type="hidden" name="img_name" value="<?= $image['file_name']; ?>">
 						<input type="submit" name="delete_image" class="btn btn-danger" value="Supprimer">
 					</div>
 				</form>
