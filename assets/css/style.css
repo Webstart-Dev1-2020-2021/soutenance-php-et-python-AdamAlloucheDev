@@ -55,6 +55,9 @@ a:hover {
 .logo {
     width: 70%;
 }
+.logo-footer {
+    width: 30%;
+}
 
 .nav-item.dropdown.show a {
     color: blue !important;
@@ -101,12 +104,24 @@ a:hover {
 }
 
 footer {
-    margin: 20vh 80px 0 80px;
-    height: 80vh;
+    margin: 150px 80px 0 80px;
 }
 
 .credits {
-    margin-top: 30vh;
+    height: 100px;
+    margin-top: 30px;
+}
+.footer-info {
+    line-height: 1.7rem;
+}
+.strong {
+    font-weight: 700;
+    font-size: 16px;
+}
+.light {
+    font-weight: 300;
+    font-size: 14px;
+    color: darkgrey;
 }
 
 hr {
