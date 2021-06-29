@@ -1,8 +1,6 @@
 <h2 class="mx-auto" style="text-align: center;"><?= ($action == 'new') ? "Ajouter un article" : "Modification de l'article" ?></h2>
 
 
-<pre><?php var_dump($_POST); ?></pre>
-
 <?php if(!empty($errors)): ?>
 	<div class="alert alert-danger alert-dismissible fade show" role="alert">
 		<strong>Erreur !</strong><br>
@@ -17,11 +15,11 @@
 <ul class="nav nav-secondary nav-tabs nav-fill mb-3" id="ex1" role="tablist">
 
   <li class="nav-item" role="presentation">
-    <a class="nav-link <?= !isset($deleteImage) ? 'active' : '';?>" id="ex1-tab-1" data-bs-toggle="tab" href="#infos" role="tab" aria-controls="ex1-tabs-1" aria-selected="true" >Infos</a>
+    <a class="nav-link <?= !isset($deleteImage) ? 'active' : '';?>" id="ex1-tab-1" data-bs-toggle="tab" href="#infos" role="tab" aria-controls="ex1-tabs-1" aria-selected="<?= !isset($deleteImage) ? 'true' : 'false';?>" >Infos</a>
   </li>
 
   <li class="nav-item" role="presentation">
-    <a class="nav-link <?= isset($deleteImage) ? 'active' : '';?>" id="ex1-tab-2" data-bs-toggle="tab" href="#images" role="tab" aria-controls="ex1-tabs-2" aria-selected="false" >Images</a>
+    <a class="nav-link <?= !empty($deleteImage) ? 'active' : '';?>" id="ex1-tab-2" data-bs-toggle="tab" href="#images" role="tab" aria-controls="ex1-tabs-2" aria-selected="<?= !empty($deleteImage) ? 'true' : 'false';?>" >Images</a>
   </li>
 
 	<?php if($action == 'edit'): ?>
@@ -37,7 +35,7 @@
 <div class="tab-content" id="ex1-content">
 
 	<!-- Tabs 1 -->
-  <div class="tab-pane fade show active" id="infos" role="tabpanel" aria-labelledby="infos"><br>
+  <div class="tab-pane fade <?= !isset($deleteImage) ? 'show active' : '';?>" id="infos" role="tabpanel" aria-labelledby="infos"><br>
 		<form method="POST" action="" name="" enctype="multipart/form-data" class="mx-auto" style="width: 500px;" >
 			<div class="mb-3">
 				<label class="form-label" for="title">Titre</label>
@@ -102,18 +100,24 @@
 
 
 	<!-- Tabs 2 -->
-  <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images">
+  <div class="tab-pane fade <?= !empty($deleteImage) ? 'show active' : '';?>" id="images" role="tabpanel" aria-labelledby="images">
     <div>
 
 
 			<?php foreach($images as $image): ?>
 				<form method="POST" action="" name="" class="col-4 my-3 mx-auto">
-					<div class="">
-						<img class="img-thumbnail img-fluid w-50 m-3" src='../assets/images/posts/<?=$image['file_name'];?>' alt="">
-						<input type="hidden" name="img_id" value="<?= $image['id']; ?>">
-						<input type="hidden" name="img_name" value="<?= $image['file_name']; ?>">
-						<input type="submit" name="delete_image" class="btn btn-danger" value="Supprimer">
-					</div>
+					
+
+						<?php if( $imageId != $image['id']): ?>
+							<div class="">
+								<img class="img-thumbnail img-fluid w-50 m-3" src='../assets/images/posts/<?=$image['file_name'];?>' alt="">
+								<input type="hidden" name="img_id" value="<?= $image['id']; ?>">
+								<input type="hidden" name="img_name" value="<?= $image['file_name']; ?>">
+								<input type="submit" name="delete_image" class="btn btn-danger" value="Supprimer">
+							</div>
+						<?php endif; ?>
+	
+
 				</form>
 			<?php endforeach; ?>
 

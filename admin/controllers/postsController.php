@@ -5,13 +5,16 @@
   require_once ('../models/Comment.php'); 
   require_once ('../models/Images.php'); 
 
+  
+  $categories = getAllCategories();
+  $action = $_GET['action'];
+  $errors = [];
+  $imageId = '';
+
   if(isset($_GET['id'])){
     $postId = $_GET['id'];
     $images = getimagesByPostId($postId);
   }
-  $categories = getAllCategories();
-  $action = $_GET['action'];
-  $errors = [];
 
   if ($action == 'list') {
 
@@ -160,7 +163,6 @@
         deleteImage($imageId);
         unlink('../assets/images/posts/'.$imageName);
         $_SESSION['message'] = 'Image supprimée !';
-        
       }
     }
 

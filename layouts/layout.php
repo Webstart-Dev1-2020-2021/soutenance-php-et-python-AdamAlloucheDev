@@ -16,10 +16,9 @@
 		<link href="./assets/icomoon-v1.0/style.css" rel="stylesheet">
 		<link href="./assets/css/reset.css" rel="stylesheet">
 		<link href="./assets/css/style.css" rel="stylesheet">
-    
+		<link rel="shortcut icon" href="./assets/images/lightning.png" type="image/x-icon">
+		<title>Moteur & Sens</title>
 
-
-		<title>MVC Local</title>
 	</head>
 	<body>
 

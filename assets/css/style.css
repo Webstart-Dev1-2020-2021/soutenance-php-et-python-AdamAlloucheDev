@@ -1,3 +1,7 @@
+.favicon {
+    color: #ebff00;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     color: #dadada;
@@ -360,4 +364,54 @@ hr {
 .connexion-textarea {
     width: 500px;
     height: 200px;
+}
+
+.page404 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #cdd9e5;
+}
+.page404 h1 {
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    left: 100px;
+    font-size: 400px !important;
+    font-weight: 700;
+    mix-blend-mode: difference;
+}
+.page404 p {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 100px;
+    font-size: 40px !important;
+    font-weight: 300;
+    mix-blend-mode: difference;
+}
+.page404 a {
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    right: 100px;
+    border: 1px #ebff00;
+    font-size: 20px !important;
+    font-weight: 500;
+    color: white;
+}
+
+.image404 {
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.icon-bolt {
+    color: #ebff00;
+    font-size: 20px;
 }
