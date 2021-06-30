@@ -5,13 +5,14 @@
 <div id="post"></div>
 
 <article class="post" >
-  <h2 class="post-title" data-aos="fade-in" ><?= $post['title']; ?></h2>
+  <h2 class="post-title " data-aos="fade-in" ><?= $post['title']; ?></h2>
   <span class="post-date" data-aos="fade-in"><?= dateFR($post['date']); ?></span><br><br>
   <h5 class="post-summary" data-aos="fade-up"> <?= $post['summary']; ?></h5>
-  <div class="post-content galery" data-aos="fade-up" data-aos-duration="500"><?= nl2br($post['content']); ?></div><br>
+  <div class="post-content " data-aos="fade-up" data-aos-duration="500"><?= nl2br($post['content']); ?></div><br>
 </article>
 
 
+<div class="galery"></div>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
